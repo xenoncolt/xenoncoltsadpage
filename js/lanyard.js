@@ -40,7 +40,7 @@ async function setAvatarFrame() {
         statusDot.style.background =
             '#3ba45d';
         statusDot.title = 'Online';
-        status2.innerHTML = 'online';
+        status2.innerHTML = 'Online';
         status2.style.cssText = 'color: #3ba45d; opacity: 1;';
         break;
     case 'dnd':
@@ -54,14 +54,14 @@ async function setAvatarFrame() {
         statusDot.style.background =
             '#faa81a';
         statusDot.title = 'Idle';
-        status2.innerHTML = "idle";
+        status2.innerHTML = "Idle <br> May be asleep or unavailable.";
         status2.style.cssText = 'color: #faa81a; opacity: 1;';
         break;
     case 'offline':
         statusDot.style.background =
             '#747e8c';
         statusDot.title = 'Offline';
-        status2.innerHTML = "offline <br> might be in eternal sleep";
+        status2.innerHTML = "Offline <br> Not At Home";
         status2.style.cssText = 'color: unset; opacity: 0.5;';
         break;
     }
@@ -142,7 +142,7 @@ async function setActivityName() {
     } = await fetchResponse(USERID);
     const mostRecent = activities.filter(m => m.type !== 4).shift();
     if (!mostRecent?.name) {
-        name.innerHTML = 'doing yo moma';
+        name.innerHTML = 'Not Doing Anything.. Feel free to contact :&gt';
         return;
     }
     name.style.display = 'block';
