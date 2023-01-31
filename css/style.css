@@ -238,6 +238,15 @@ section {
      padding: 20px;
    }
 
+   /*bg color*/
+   .bgcolor {
+    background-color: rgb(8, 8, 8);
+   }
+
+   #projects {
+    background-color: black;
+   }
+
    
    
 
