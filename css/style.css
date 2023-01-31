@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&family=Roboto:wght@100;300;400;500;700&display=swap');
 
+/*Import FiraCode font*/
+@font-face {
+    font-family: FiraCode-Bold;
+    src: url(../font/FiraCode/FiraCode-Bold.woff2);
+  }
+  @font-face {
+    font-family: FiraCode-Light;
+    src: url(../font/FiraCode/FiraCode-Light.woff2);
+  }
+  @font-face {
+    font-family: FiraCode-Medium;
+    src: url(../font/FiraCode/FiraCode-Medium.woff2);
+  }
+  @font-face {
+    font-family: Firacode-Regular;
+    src: url(../font/FiraCode/FiraCode-Regular.woff2);
+  }
+
 *,
 *::after,
 *::before {
@@ -9,7 +27,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FiraCode-Bold';
     font-size: 16px;
     line-height: 1.5;
     
@@ -170,7 +188,7 @@ a {
 
 /* About section Test */
 
-section {
+    section {
     padding: 6em 2em;
     background-color: rgb(17, 17, 17);
   }
@@ -181,11 +199,12 @@ section {
   }
 
 
-  section:nth-of-type(2n) {
+    section:nth-of-type(2n) {
     background: rgba(7, 7, 7, 0.4);
   }
 
-  section h2 {
+  /*about heading*/
+  .heading {
     text-align: center;
     text-decoration: underline;
 
@@ -202,26 +221,8 @@ section {
     color: #a00000;
   }
 
-  /*Import FiraCode font*/
-  @font-face {
-    font-family: FiraCode-Bold;
-    src: url(../font/FiraCode/FiraCode-Bold.woff2);
-  }
-  @font-face {
-    font-family: FiraCode-Light;
-    src: url(../font/FiraCode/FiraCode-Light.woff2);
-  }
-  @font-face {
-    font-family: FiraCode-Medium;
-    src: url(../font/FiraCode/FiraCode-Medium.woff2);
-  }
-  @font-face {
-    font-family: Firacode-Regular;
-    src: url(../font/FiraCode/FiraCode-Regular.woff2);
-  }
-
   /*About me text*/
-  section p {
+  .abdetails {
     font-family: "FiraCode-Light";
     font-size: 1.4rem;
     color: rgb(255, 255, 255);
