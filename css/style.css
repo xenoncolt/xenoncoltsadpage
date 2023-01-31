@@ -188,7 +188,7 @@ a {
 
 /* About section Test */
 
-    section {
+section {
     padding: 6em 2em;
     background-color: rgb(17, 17, 17);
   }
@@ -199,12 +199,11 @@ a {
   }
 
 
-    section:nth-of-type(2n) {
+  section:nth-of-type(2n) {
     background: rgba(7, 7, 7, 0.4);
   }
 
-  /*about heading*/
-  .heading {
+  section h2 {
     text-align: center;
     text-decoration: underline;
 
@@ -222,7 +221,7 @@ a {
   }
 
   /*About me text*/
-  .abdetails {
+  section p {
     font-family: "FiraCode-Light";
     font-size: 1.4rem;
     color: rgb(255, 255, 255);
