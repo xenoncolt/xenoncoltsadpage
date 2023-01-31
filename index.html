@@ -24,14 +24,28 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
   <!-- Main CSS-->
   <link rel="stylesheet" href="css/style.css">
+  
   <!-- Discord Import -->
   <script defer src="js/lanyard.js"></script>
+
+  <!-- Github Project -->
+  <script defer src="js/githubRepo.js"></script>
+
+  <!-- Birthday Age -->
+  <script defer type="text/javascript" src="js/ageCalculator.js"></script>
+
+  <!-- Footer CP -->
+  <script defer type="text/javascript" src="js/footercp.js"></script>
 
   <script src="https://code.jquery.com/jquery-latest.js"></script>
 
@@ -933,16 +947,21 @@
     </div>
   </section> -->
 
-  <!-- Projects Section -->
+  <!--Github Projects Section -->
   <section class="row wow fadeInUp" data-wow-delay="0.3s" id="projects">
     <!-- Projects title -->
     <h2 class="col-sm-12">Projects</h2>
 
     <!-- Projects Body -->
-    <div id="projectsBody">
-      <p id="bodySubTitle">
-        Here's a bunch of my most notable projects pulled dynamically from the Github API!
-      </p>
+    <div class="gitcard-container">
+      <div class="gitcard" id="project-card">
+        <div class="gitcard-body">
+          <h5 class="card-title" id="project-title"></h5>
+          <p class="gitcard-text" id="project-description"></p>
+          <p class="gitcard-text" id="project-language"></p>
+          <a href="#" class="gitcard-link" id="project-url" target="_blank">Check out on Github</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -996,7 +1015,10 @@
   <script type="text/javascript" src="js/typed.js/lib/typed.js"></script>
 
   <script>
-    new WOW().init();
+
+    //**************** Moved everything and find better way****************//
+    
+   /* new WOW().init();
     $(function () { $('[data-toggle="tooltip"]').tooltip() })
 
     function setQuality() {
@@ -1034,6 +1056,10 @@
 
       document.getElementById('footerCP').innerHTML = "&copy; " + curDate.getFullYear() + " Xenon Colt";
     }
+
+  
+     ***************Old and not working*****************
+
 
     function buildImageDiv(icon, projectName) {
       // Learn real js to not recreate this every call
@@ -1134,7 +1160,10 @@
           console.log(response);
         }
       });
-    });
+    });*/
+
+
+
   </script>
 </body>
 </html>
