@@ -4,19 +4,22 @@
 @font-face {
     font-family: FiraCode-Bold;
     src: url(../font/FiraCode/FiraCode-Bold.woff2);
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: FiraCode-Light;
     src: url(../font/FiraCode/FiraCode-Light.woff2);
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: FiraCode-Medium;
     src: url(../font/FiraCode/FiraCode-Medium.woff2);
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: Firacode-Regular;
     src: url(../font/FiraCode/FiraCode-Regular.woff2);
-  }
+}
 
 *,
 *::after,
@@ -30,8 +33,11 @@ body {
     font-family: 'FiraCode-Bold';
     font-size: 16px;
     line-height: 1.5;
-    
+    /************** Cursor Style ****************/
+    cursor: url('/img/overlays/cursor.png'), auto;
+
 }
+
 a {
     color: #a00000;
     text-decoration: none;
@@ -78,11 +84,11 @@ a {
     gap: 1em;
 }
 
-.Profile-pic{
+.Profile-pic {
     position: relative;
 }
 
-#pfp{
+#pfp {
     width: 128px;
     height: 128px;
     border-radius: 10%;
@@ -164,7 +170,7 @@ a {
     .discordcard {
         width: 98%;
     }
-    
+
 }
 
 .connections {
@@ -191,111 +197,127 @@ a {
 section {
     padding: 6em 2em;
     background-color: rgb(17, 17, 17);
-  }
-  
+}
 
-  .row {
+
+.row {
     margin: 0;
-  }
+}
 
 
-  section:nth-of-type(2n) {
+section:nth-of-type(2n) {
     background: rgba(7, 7, 7, 0.4);
-  }
+}
 
-  section h2 {
+section h2 {
     text-align: center;
     text-decoration: underline;
 
     font-size: 2.5rem;
     font-family: "FiraCode-Bold";
     color: white;
-  }
+}
 
-  /* Used for name/location headers */
-  section h5 {
+/* Used for name/location headers */
+section h5 {
     font-family: Katibeh;
     font-weight: bold;
     font-size: 2rem;
     color: #a00000;
-  }
+}
 
-  /*About me text*/
-  section p {
+/*About me text*/
+section p {
     font-family: "FiraCode-Light";
     font-size: 1.4rem;
     color: rgb(255, 255, 255);
-  }
+}
 
-  #about p {
-      margin-top: 50px;
-      color: white;
-  }
+#about p {
+    margin-top: 50px;
+    color: white;
+}
 
-  .avatar {
-     width: 20em;
-     margin: auto;
-     padding: 20px;
-   }
+.avatar {
+    width: 20em;
+    margin: auto;
+    padding: 20px;
+}
 
-   /*bg color*/
-   .bgcolor {
+/*bg color*/
+.bgcolor {
     background-color: rgb(8, 8, 8);
-   }
+}
 
-   #projects {
+#projects {
     background-color: black;
-   }
+}
 
 
-   /******** Github Repositories*********/
-   .gitcard {
+/******** Github Repositories*********/
+.gitcard {
     width: 18rem;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(248, 1, 186, 0.2);
     transition: 0.3s;
     border-radius: 10px;
-   }
-   .gitcard:hover {
+}
+
+.gitcard:hover {
     box-shadow: 0 8px 16px 0 rgba(23, 42, 212, 0.2);
-   }
-   .gitcard-body {
+}
+
+.gitcard-body {
     padding: 15px;
-   }
-   .gitcard-title {
+}
+
+.gitcard-title {
     font-size: 14px;
-   }
-   .gitcard-text {
+}
+
+.gitcard-text {
     font-size: 14px;
     color: gray;
-   }
-   .gitcard-link {
+}
+
+.gitcard-link {
     color: blue;
-   }
-   .gitcard-container {
+}
+
+.gitcard-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-   }
+}
 
-   
-   /* Mobile specific classes */
-   @media screen and (max-width: 480px) {
-    .AofFLeft, .AofFRight { text-align: center; }
-  }
 
-  .noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
+/* Mobile specific classes */
+@media screen and (max-width: 480px) {
+
+    .AofFLeft,
+    .AofFRight {
+        text-align: center;
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
-  }
+}
 
-  .nopadding {
-      padding: 0 !important;
-  }
+.nopadding {
+    padding: 0 !important;
+}
